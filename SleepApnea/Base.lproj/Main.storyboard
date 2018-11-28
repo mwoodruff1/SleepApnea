@@ -24,7 +24,7 @@
                                     <navigationItem title="Symptoms" id="Epv-Aa-afO">
                                         <barButtonItem key="leftBarButtonItem" title="Back" id="Q2E-T7-3G6">
                                             <connections>
-                                                <segue destination="BVL-ge-giZ" kind="show" id="m4q-Dx-CAo"/>
+                                                <segue destination="BVL-ge-giZ" kind="showDetail" animates="NO" id="m4q-Dx-CAo"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -109,10 +109,10 @@
                                 <rect key="frame" x="61.666666666666657" y="104" width="291" height="226"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Kfm-uD-svB" userLabel="Buttons">
-                                <rect key="frame" x="130" y="524" width="154" height="228"/>
+                                <rect key="frame" x="123" y="494.66666666666674" width="168" height="287"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FSB-6q-vQr">
-                                        <rect key="frame" x="3" y="0.0" width="148" height="51"/>
+                                        <rect key="frame" x="10" y="0.0" width="148" height="51"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                         <state key="normal" title="Symptoms"/>
                                         <connections>
@@ -120,7 +120,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gz0-tF-q90">
-                                        <rect key="frame" x="0.0" y="59" width="154" height="51"/>
+                                        <rect key="frame" x="7" y="58.999999999999943" width="154" height="51"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                         <state key="normal" title="Treatments"/>
                                         <connections>
@@ -128,28 +128,35 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rlw-Vv-mGI">
-                                        <rect key="frame" x="38" y="118" width="78" height="51"/>
+                                        <rect key="frame" x="0.0" y="117.99999999999994" width="168" height="51"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                        <state key="normal" title="Verse"/>
+                                        <state key="normal" title="Comparison"/>
                                         <connections>
                                             <segue destination="JjE-LB-Ska" kind="show" id="H5v-gv-mHo"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fkn-j0-qfd">
-                                        <rect key="frame" x="36" y="177" width="82" height="51"/>
+                                        <rect key="frame" x="58" y="176.99999999999994" width="52" height="51"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                        <state key="normal" title="Notes"/>
+                                        <state key="normal" title="Info"/>
                                         <connections>
                                             <segue destination="gnq-4f-oBq" kind="show" id="dVs-hO-FLV"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CUZ-sb-3no">
+                                        <rect key="frame" x="52" y="235.99999999999994" width="64" height="51"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <state key="normal" title="Quiz"/>
+                                    </button>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="CUZ-sb-3no" firstAttribute="top" secondItem="Fkn-j0-qfd" secondAttribute="bottom" constant="8" id="1X2-Bh-qSD"/>
                                     <constraint firstItem="gz0-tF-q90" firstAttribute="top" secondItem="FSB-6q-vQr" secondAttribute="bottom" constant="8" id="9Zw-kd-4ik"/>
                                     <constraint firstItem="FSB-6q-vQr" firstAttribute="top" secondItem="Kfm-uD-svB" secondAttribute="top" id="B0Z-9i-iw6"/>
                                     <constraint firstItem="Rlw-Vv-mGI" firstAttribute="top" secondItem="gz0-tF-q90" secondAttribute="bottom" constant="8" id="Cz7-y0-aXp"/>
-                                    <constraint firstAttribute="bottom" secondItem="Fkn-j0-qfd" secondAttribute="bottom" id="Ekm-0d-3Nx"/>
+                                    <constraint firstItem="Fkn-j0-qfd" firstAttribute="top" secondItem="Rlw-Vv-mGI" secondAttribute="bottom" constant="8" id="XNn-oU-kK5"/>
                                     <constraint firstItem="Fkn-j0-qfd" firstAttribute="top" secondItem="Rlw-Vv-mGI" secondAttribute="bottom" constant="8" id="guB-ps-iRA"/>
+                                    <constraint firstAttribute="bottom" secondItem="CUZ-sb-3no" secondAttribute="bottom" id="jZg-08-Bd3"/>
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Obstructive Sleep Apnea" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cXg-EU-OYf">
@@ -189,7 +196,7 @@
                                     <navigationItem title="Treatments" id="Jx3-tp-UCx">
                                         <barButtonItem key="leftBarButtonItem" title="Back" id="tNb-bu-NbA">
                                             <connections>
-                                                <segue destination="BVL-ge-giZ" kind="show" id="XiR-hA-WSu"/>
+                                                <segue destination="BVL-ge-giZ" kind="showDetail" animates="NO" id="XiR-hA-WSu"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -266,22 +273,22 @@
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qe1-w1-iB9">
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                                 <items>
-                                    <navigationItem title="Regular Vs Obstructed" id="BhD-ap-EvK">
+                                    <navigationItem title="Central Vs Obstructed" id="BhD-ap-EvK">
                                         <barButtonItem key="leftBarButtonItem" title="Back" id="nMW-qh-LV5">
                                             <connections>
-                                                <segue destination="BVL-ge-giZ" kind="show" id="KfT-ct-3vU"/>
+                                                <segue destination="BVL-ge-giZ" kind="showDetail" animates="NO" id="KfT-ct-3vU"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="SMy-7c-G1I">
-                                <rect key="frame" x="20" y="107.99999999999999" width="374" height="253.66666666666663"/>
+                                <rect key="frame" x="20" y="108.00000000000003" width="374" height="470.66666666666674"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LGl-sP-UPj">
-                                        <rect key="frame" x="0.0" y="0.0" width="352.66666666666669" height="39.666666666666664"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="345.33333333333331" height="39.666666666666664"/>
                                         <attributedString key="attributedText">
-                                            <fragment content="Regular Vs Obstructed">
+                                            <fragment content="Central Vs Obstructed">
                                                 <attributes>
                                                     <font key="NSFont" size="34" name=".SFNSDisplay"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -299,27 +306,29 @@
                                         </attributedString>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Excessive daytime sleepiness" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a0Q-Ab-zMx">
-                                        <rect key="frame" x="0.0" y="53.666666666666664" width="295.66666666666669" height="26.333333333333336"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Obstructive Sleep Apnea" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a0Q-Ab-zMx">
+                                        <rect key="frame" x="0.0" y="53.666666666666664" width="256.66666666666669" height="26.333333333333336"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Loud snoring" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="duE-zI-pri">
-                                        <rect key="frame" x="0.0" y="94" width="138.66666666666666" height="26.333333333333329"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="duE-zI-pri">
+                                        <rect key="frame" x="0.0" y="94" width="372.33333333333331" height="129"/>
+                                        <string key="text">    Obstructive Sleep Apnea (OSA) is where your upper airway gets partially or completely blocked while you sleep. This obstruction causes your chest muscles and diaphragm to work harder to open up the blocked airway and draw air into your lungs.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Observed episodes of breathing cessation during sleep" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LGf-Ng-wxN">
-                                        <rect key="frame" x="0.0" y="134.33333333333334" width="323" height="52.666666666666657"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Central Sleep Apnea" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LGf-Ng-wxN">
+                                        <rect key="frame" x="0.0" y="237" width="210.66666666666666" height="26.333333333333314"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Abrupt awakenings accompanied by gasping or choking" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yRJ-Az-EF9">
-                                        <rect key="frame" x="0.0" y="201" width="364" height="52.666666666666657"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yRJ-Az-EF9">
+                                        <rect key="frame" x="0.0" y="277.33333333333331" width="374" height="193.33333333333331"/>
+                                        <string key="text">    With central sleep apnea (CSA), cessation of respiratory drive results in a lack of respiratory movements. During sleep, your breathing is disrupted regularly because of how your brain functions. It's not that you're not able to breathe (like when you have OSA), but rather your brain doesn't tell your muscles to breathe, and therefore, you don't try to breathe.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -354,10 +363,10 @@
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TBA-Yc-XnA">
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                                 <items>
-                                    <navigationItem title="Treatments" id="d5Y-9i-c3T">
+                                    <navigationItem title="Notes" id="d5Y-9i-c3T">
                                         <barButtonItem key="leftBarButtonItem" title="Back" id="5eP-Wv-gTG">
                                             <connections>
-                                                <segue destination="BVL-ge-giZ" kind="show" id="ElZ-aI-7fS"/>
+                                                <segue destination="BVL-ge-giZ" kind="showDetail" animates="NO" id="ElZ-aI-7fS"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
