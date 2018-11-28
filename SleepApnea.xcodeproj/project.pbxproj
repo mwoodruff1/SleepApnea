@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C5A170CB21AF2D5D002D7135 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A170CA21AF2D5D002D7135 /* QuizViewController.swift */; };
 		C5DA82B321A8E8A3002D440E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DA82B221A8E8A3002D440E /* AppDelegate.swift */; };
 		C5DA82B521A8E8A3002D440E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DA82B421A8E8A3002D440E /* ViewController.swift */; };
 		C5DA82B821A8E8A3002D440E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5DA82B621A8E8A3002D440E /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C5A170CA21AF2D5D002D7135 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		C5DA82AF21A8E8A3002D440E /* SleepApnea.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SleepApnea.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5DA82B221A8E8A3002D440E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C5DA82B421A8E8A3002D440E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				C5DA82BE21A8E8A4002D440E /* LaunchScreen.storyboard */,
 				C5DA82C121A8E8A4002D440E /* Info.plist */,
 				C5DA82B921A8E8A3002D440E /* SleepApnea.xcdatamodeld */,
+				C5A170CA21AF2D5D002D7135 /* QuizViewController.swift */,
 			);
 			path = SleepApnea;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 				C5DA82B521A8E8A3002D440E /* ViewController.swift in Sources */,
 				C5DA82B321A8E8A3002D440E /* AppDelegate.swift in Sources */,
 				C5DA82BB21A8E8A3002D440E /* SleepApnea.xcdatamodeld in Sources */,
+				C5A170CB21AF2D5D002D7135 /* QuizViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
