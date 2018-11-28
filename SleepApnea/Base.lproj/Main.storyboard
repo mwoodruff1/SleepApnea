@@ -373,7 +373,7 @@
                                 </items>
                             </navigationBar>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="z2l-Qq-BXz">
-                                <rect key="frame" x="20" y="108" width="374" height="201"/>
+                                <rect key="frame" x="20" y="108" width="374" height="599.66666666666663"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nfL-dn-g9F">
                                         <rect key="frame" x="0.0" y="0.0" width="99.666666666666671" height="39.666666666666664"/>
@@ -388,27 +388,29 @@
                                         </attributedString>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Lifestyle Changes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WrV-Ej-TV1">
-                                        <rect key="frame" x="0.0" y="53.666666666666664" width="185" height="26.333333333333336"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Central Sleep Apnea" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WrV-Ej-TV1">
+                                        <rect key="frame" x="0.0" y="53.666666666666664" width="210.66666666666666" height="26.333333333333336"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Eating Healthier Foods" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dRc-WE-Tf2">
-                                        <rect key="frame" x="0.0" y="94" width="229.66666666666666" height="26.333333333333329"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dRc-WE-Tf2">
+                                        <rect key="frame" x="0.0" y="94.000000000000014" width="374" height="236.33333333333337"/>
+                                        <string key="text">    Central sleep apnea is more common among older adults, especially adults older than age 65. This could be because they may have other medical conditions or sleep patterns that are more likely to cause CSA.Another factor, is being male. Men are more at risk for both CSA and obstructive sleep apnea. Being overweight is a risk factors for OSA but is generally not considered a risk factor for CSA. However, anyone can have any of the types of sleep apnea.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Sleep Therapy" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aXm-Ok-hwa">
-                                        <rect key="frame" x="0.0" y="134.33333333333334" width="152" height="26.333333333333343"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Obstructive Sleep Apnea" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aXm-Ok-hwa">
+                                        <rect key="frame" x="0.0" y="344.33333333333331" width="256.66666666666669" height="26.333333333333314"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Aerobic Excercises" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RNz-Kq-bTV">
-                                        <rect key="frame" x="0.0" y="174.66666666666669" width="194" height="26.333333333333343"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RNz-Kq-bTV">
+                                        <rect key="frame" x="0.0" y="384.66666666666669" width="374" height="215.00000000000006"/>
+                                        <string key="text">    It’s more likely if you're overweight or obese, have a thick or large neck, or have smaller airways in your nose, throat, or mouth. It can also happen if you have enlarged tonsils or too much tissue at the back of the throat -- the uvula and soft palate -- that hangs down and blocks the windpipe. A larger-than-average tongue can also block the airway in many people as well as a deviated septum in the nose</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -437,6 +439,6 @@
         <image name="Logo_Maryville" width="291" height="226"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="KfT-ct-3vU"/>
+        <segue reference="ElZ-aI-7fS"/>
     </inferredMetricsTieBreakers>
 </document>
