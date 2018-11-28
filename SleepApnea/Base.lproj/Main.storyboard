@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BVL-ge-giZ">
-    <device id="retina6_1" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,7 +15,7 @@
             <objects>
                 <viewController id="Xph-y5-dxX" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mcl-Eh-reY">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="joh-NR-pqf"/>
@@ -31,7 +31,7 @@
             <objects>
                 <viewController id="Pem-VY-llX" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Bwy-71-TCg">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RF1-I1-q97">
@@ -98,51 +98,72 @@
             <objects>
                 <viewController id="BVL-ge-giZ" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hjh-dH-Ytw">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo_Maryville" translatesAutoresizingMaskIntoConstraints="NO" id="zT7-rv-BUX">
-                                <rect key="frame" x="77" y="87" width="260" height="260"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo_Maryville" translatesAutoresizingMaskIntoConstraints="NO" id="zT7-rv-BUX">
+                                <rect key="frame" x="42" y="62" width="291" height="226"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gz0-tF-q90">
-                                <rect key="frame" x="130" y="583" width="154" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <state key="normal" title="Treatments"/>
-                                <connections>
-                                    <segue destination="e2d-f8-fAK" kind="show" id="wJV-nN-e4t"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rlw-Vv-mGI">
-                                <rect key="frame" x="168" y="642" width="78" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <state key="normal" title="Verse"/>
-                                <connections>
-                                    <segue destination="Xph-y5-dxX" kind="show" id="tfX-5o-P5Q"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fkn-j0-qfd">
-                                <rect key="frame" x="166" y="701" width="82" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <state key="normal" title="Notes"/>
-                                <connections>
-                                    <segue destination="PA6-Ox-PeK" kind="show" id="ONO-nn-24a"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FSB-6q-vQr">
-                                <rect key="frame" x="133" y="524" width="148" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <state key="normal" title="Symptoms"/>
-                                <connections>
-                                    <segue destination="Pem-VY-llX" kind="show" id="N7Q-6c-61T"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Kfm-uD-svB" userLabel="Buttons">
+                                <rect key="frame" x="110.66666666666669" y="482" width="154" height="228"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FSB-6q-vQr">
+                                        <rect key="frame" x="3" y="0.0" width="148" height="51"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <state key="normal" title="Symptoms"/>
+                                        <connections>
+                                            <segue destination="Pem-VY-llX" kind="show" id="N7Q-6c-61T"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gz0-tF-q90">
+                                        <rect key="frame" x="0.0" y="59" width="154" height="51"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <state key="normal" title="Treatments"/>
+                                        <connections>
+                                            <segue destination="e2d-f8-fAK" kind="show" id="wJV-nN-e4t"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rlw-Vv-mGI">
+                                        <rect key="frame" x="37.999999999999986" y="118" width="78" height="51"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <state key="normal" title="Verse"/>
+                                        <connections>
+                                            <segue destination="Xph-y5-dxX" kind="show" id="tfX-5o-P5Q"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fkn-j0-qfd">
+                                        <rect key="frame" x="35.999999999999986" y="177" width="82" height="51"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <state key="normal" title="Notes"/>
+                                        <connections>
+                                            <segue destination="PA6-Ox-PeK" kind="show" id="ONO-nn-24a"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="gz0-tF-q90" firstAttribute="top" secondItem="FSB-6q-vQr" secondAttribute="bottom" constant="8" id="9Zw-kd-4ik"/>
+                                    <constraint firstItem="FSB-6q-vQr" firstAttribute="top" secondItem="Kfm-uD-svB" secondAttribute="top" id="B0Z-9i-iw6"/>
+                                    <constraint firstItem="Rlw-Vv-mGI" firstAttribute="top" secondItem="gz0-tF-q90" secondAttribute="bottom" constant="8" id="Cz7-y0-aXp"/>
+                                    <constraint firstAttribute="bottom" secondItem="Fkn-j0-qfd" secondAttribute="bottom" id="Ekm-0d-3Nx"/>
+                                    <constraint firstItem="Fkn-j0-qfd" firstAttribute="top" secondItem="Rlw-Vv-mGI" secondAttribute="bottom" constant="8" id="guB-ps-iRA"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Obstructive Sleep Apnea" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cXg-EU-OYf">
+                                <rect key="frame" x="13.666666666666657" y="313" width="347.66666666666674" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cXg-EU-OYf" firstAttribute="centerX" secondItem="hjh-dH-Ytw" secondAttribute="centerX" id="9gg-IS-DfC"/>
+                            <constraint firstItem="Kfm-uD-svB" firstAttribute="centerY" secondItem="hjh-dH-Ytw" secondAttribute="centerY" constant="190" id="EZN-SR-0tw"/>
+                            <constraint firstItem="Kfm-uD-svB" firstAttribute="centerX" secondItem="hjh-dH-Ytw" secondAttribute="centerX" id="PAf-Qn-jqg"/>
+                            <constraint firstItem="cXg-EU-OYf" firstAttribute="centerY" secondItem="hjh-dH-Ytw" secondAttribute="centerY" constant="-75" id="gFK-Gb-jy0"/>
+                            <constraint firstItem="zT7-rv-BUX" firstAttribute="centerY" secondItem="hjh-dH-Ytw" secondAttribute="centerY" constant="-231" id="heN-Io-HF9"/>
+                            <constraint firstItem="zT7-rv-BUX" firstAttribute="centerX" secondItem="hjh-dH-Ytw" secondAttribute="centerX" id="tLH-w6-flk"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="kzO-RO-PjJ"/>
                     </view>
                 </viewController>
@@ -175,7 +196,7 @@
             <objects>
                 <viewController id="e2d-f8-fAK" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KSV-uA-Hf6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vnX-WR-qv5">
@@ -236,7 +257,7 @@
             <objects>
                 <viewController id="PA6-Ox-PeK" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iKK-xu-1SJ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="fra-cu-KQW"/>
