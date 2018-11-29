@@ -457,9 +457,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Obstructive Sleep Apnea Quiz" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RAU-Ff-xmT">
-                                <rect key="frame" x="34" y="359" width="346" height="69.333333333333314"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Sleep Apnea Quiz" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RAU-Ff-xmT">
+                                <rect key="frame" x="34" y="359" width="346" height="75"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="42"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -482,7 +482,17 @@
                                 <rect key="frame" x="139" y="811" width="136" height="51"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <state key="normal" title="Start Quiz"/>
+                                <connections>
+                                    <segue destination="LF5-4s-njO" kind="show" id="hQw-wM-U8O"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Test Your Knowledge about Sleep Apnea" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TKr-7D-TGg">
+                                <rect key="frame" x="16" y="471" width="383" height="164"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -508,7 +518,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i5P-2F-2WT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2186" y="-49"/>
+            <point key="canvasLocation" x="2185.507246376812" y="-49.553571428571423"/>
         </scene>
         <!--Question1-->
         <scene sceneID="8cc-Ze-Jts">
@@ -518,8 +528,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are they snoring loudly?" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YNx-rL-4Y2">
-                                <rect key="frame" x="34" y="359" width="346" height="34.666666666666686"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Central Sleep Apnea is more likely to occur in younger adults ages 18 - 25" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YNx-rL-4Y2">
+                                <rect key="frame" x="61" y="363" width="305" height="199"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -534,20 +544,40 @@
                                 </items>
                             </navigationBar>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="J9g-Kh-z9R">
-                                <rect key="frame" x="182" y="752" width="50" height="110"/>
+                                <rect key="frame" x="171" y="752" width="72" height="110"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jJX-cP-JwA">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="51"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="72" height="51"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                        <state key="normal" title="Yes"/>
+                                        <state key="normal" title="True"/>
+                                        <connections>
+                                            <action selector="TQ1:" destination="LF5-4s-njO" eventType="touchUpInside" id="sYu-T9-tjh"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B1z-o5-LOW">
-                                        <rect key="frame" x="0.0" y="59" width="50" height="51"/>
+                                        <rect key="frame" x="0.0" y="59" width="72" height="51"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                        <state key="normal" title="No"/>
+                                        <state key="normal" title="False"/>
+                                        <connections>
+                                            <action selector="FQ1:" destination="LF5-4s-njO" eventType="touchUpInside" id="gaD-ry-o1G"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cka-TX-C67">
+                                <rect key="frame" x="67" y="557" width="292" height="187"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KfS-up-BZi">
+                                <rect key="frame" x="251" y="769" width="153" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="JXP-uP-YSu" kind="show" id="O46-dk-9jY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -567,10 +597,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="aR6-Bf-WHT"/>
                     </view>
+                    <connections>
+                        <outlet property="FQ1" destination="B1z-o5-LOW" id="hDf-ZV-f7s"/>
+                        <outlet property="NQ1" destination="KfS-up-BZi" id="Wk4-41-Kvt"/>
+                        <outlet property="ResponseQ1" destination="cka-TX-C67" id="7ao-t2-WhI"/>
+                        <outlet property="TQ1" destination="jJX-cP-JwA" id="nGZ-FG-4p5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cGf-QQ-5oT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3145" y="-50"/>
+            <point key="canvasLocation" x="3144.9275362318845" y="-50.223214285714285"/>
         </scene>
         <!--Question2-->
         <scene sceneID="bKj-3d-C6j">
