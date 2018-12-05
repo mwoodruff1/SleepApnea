@@ -18,20 +18,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo_Maryville" translatesAutoresizingMaskIntoConstraints="NO" id="nPi-z6-abK">
-                                <rect key="frame" x="67" y="213" width="240" height="240"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="ANG-5l-EKK"/>
-                                    <constraint firstAttribute="height" constant="240" id="Bf6-ad-YBk"/>
-                                </constraints>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo_Maryville" translatesAutoresizingMaskIntoConstraints="NO" id="PdM-Qy-SQz">
+                                <rect key="frame" x="42" y="220" width="291" height="226"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nPi-z6-abK" secondAttribute="trailing" constant="68" id="XEh-0d-uN0"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nPi-z6-abK" secondAttribute="bottom" constant="214" id="b5T-Nd-0ju"/>
-                            <constraint firstItem="nPi-z6-abK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="m5M-5d-jCj"/>
-                            <constraint firstItem="nPi-z6-abK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="193" id="sMV-PE-6oB"/>
+                            <constraint firstItem="PdM-Qy-SQz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="6P7-b7-c5k"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PdM-Qy-SQz" secondAttribute="trailing" constant="42" id="F2f-nV-CnD"/>
+                            <constraint firstItem="PdM-Qy-SQz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="42" id="jzo-WH-YVn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="PdM-Qy-SQz" secondAttribute="bottom" constant="221" id="ya4-rk-BqJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
