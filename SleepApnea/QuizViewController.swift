@@ -86,6 +86,7 @@ class QuizViewController: UIViewController {
         ShowScore.titleLabel?.font = UIFont(name: "System", size: 100)
         ShowScore.setTitle("You Scored " + String(AppDelegate.GlobalVariable.correctAnswers) + " out of 3!", for: .normal)
         BackToMenu.setTitle("Back to Main Menu", for: .normal)
+        ShowScore.isEnabled = false;
     }
     @IBAction func backToMain(_ sender: UIButton) {
         AppDelegate.GlobalVariable.correctAnswers -= AppDelegate.GlobalVariable.correctAnswers
